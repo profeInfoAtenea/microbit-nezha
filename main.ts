@@ -18,6 +18,7 @@ function retroceder () {
     neZha.setMotorSpeed(neZha.MotorList.M1, -100)
     neZha.setMotorSpeed(neZha.MotorList.M4, 100)
 }
+basic.showIcon(IconNames.Heart)
 basic.forever(function () {
     if (10 >= PlanetX_Basic.ultrasoundSensor(PlanetX_Basic.DigitalRJPin.J1, PlanetX_Basic.Distance_Unit_List.Distance_Unit_cm)) {
         retroceder()
